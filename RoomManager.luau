@@ -256,6 +256,7 @@ local function positionRoom(room : Instance)
 end
 
 -- Small helper function, although it is redundant
+-- Despite being redundant, helps reduce a couple lines of code
 local function positionObject(object : Instance, toPosition : Instance)
      object:PivotTo(toPosition.CFrame)
 end
@@ -456,4 +457,5 @@ roomManager.createStartRoom = function()
 end
 
 return roomManager
+
 
